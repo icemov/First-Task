@@ -4,9 +4,9 @@ $y = 16;
 
 while ($x <= $y) {
     if($x > 0){
-    	if($x % 3 == 0){
-    		echo "Fizz";
-    		if($x % 5 == 0){
+    	if($x % 3 == 0){ // if the remainder of $x/3 = 0
+    		echo "Fizz"; 
+    		if($x % 5 == 0){ // if the remainder of $x/5 = 0
 	    		echo "Buzz";
 	    	}
     	}
