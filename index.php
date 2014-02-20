@@ -1,7 +1,7 @@
 <?php 
 $x = 4;
 $y = 11;
-$z = false;
+$z = false; // set the flag to false as default
 
 while ($x <= $y) {
     
@@ -11,12 +11,12 @@ while ($x <= $y) {
     		echo "Buzz";
     	}
 
-    	$z = true;
+    	$z = true; // set the flag to true
 	}
 	else if($x % 5 == 0){ // if the remainder of $x/5 = 0
 		echo "Buzz";
 
-		$z = true;
+		$z = true; // set the flag to true
 	}
 	else{
 		if($z == true){
@@ -24,9 +24,8 @@ while ($x <= $y) {
 		}
 		else{
 			echo $x;
-			
 		}
-		$z = false;
+		$z = false; // set the flag to default
 	}
 	echo "<br />";
     $x++;
