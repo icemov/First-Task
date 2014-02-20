@@ -1,20 +1,34 @@
 <?php 
-$x = 12;
-$y = 16;
+$x = 4;
+$y = 11;
+$z = false;
 
 while ($x <= $y) {
-    if($x > 0){
-    	if($x % 3 == 0){ // if the remainder of $x/3 = 0
-    		echo "Fizz"; 
-    		if($x % 5 == 0){ // if the remainder of $x/5 = 0
-	    		echo "Buzz";
-	    	}
+    
+	if($x % 3 == 0){ // if the remainder of $x/3 = 0
+		echo "Fizz"; 
+		if($x % 5 == 0){ // if the remainder of $x/5 = 0
+    		echo "Buzz";
     	}
-    	else{
-    		echo $x;
-    	}
-    	echo "<br />";
-    }
+
+    	$z = true;
+	}
+	else if($x % 5 == 0){ // if the remainder of $x/5 = 0
+		echo "Buzz";
+
+		$z = true;
+	}
+	else{
+		if($z == true){
+			echo "Bazz";
+		}
+		else{
+			echo $x;
+			
+		}
+		$z = false;
+	}
+	echo "<br />";
     $x++;
 };
 
