@@ -1,12 +1,20 @@
 <?php 
-$x = -7;
-$y = 10;
+$x = 12;
+$y = 16;
 
-
-// echo $x;
 while ($x <= $y) {
-    # code...
-    echo $x."<br/>";
+    if($x > 0){
+    	if($x % 3 == 0){
+    		echo "Fizz";
+    		if($x % 5 == 0){
+	    		echo "Buzz";
+	    	}
+    	}
+    	else{
+    		echo $x;
+    	}
+    	echo "<br />";
+    }
     $x++;
 };
 
